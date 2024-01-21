@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIN</title>
+</head>
+<style>
+    .body,.html{
+        margin: 0px;
+        padding: 0px;
+        background-color: #FDFCFC ;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display:inline
+    }
+    .upperbox{
+        width : 100%;
+        height: 295px;
+        border : 1px solid black;
+        border-radius : 5px;
+        overflow: hidden;
+        display: grid; 
+        
+    }
+    
+    .mainlogo{
+        margin-top: 50px;
+        margin-left: 34px;
+        width: 431px;
+        height: auto;
+    }
+
+    .upper_list{
+        text-decoration: none;
+        list-style: none;
+        font-size: 32px;
+        float: right;
+        margin-right: 35px;
+        text-align: right;
+
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .contents{
+        font-size: 35px;
+        text-align: center;
+    }
+
+
+    .category{
+        display: flex;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .magazine{
+        width : 50%;
+        height: 500px;
+        background-color: #C8D9F8;
+
+        
+    } 
+    .img_mag{
+        display: none;
+        
+    }
+    .magazine:hover .img_mag {
+        width: 100%;
+        display: block;
+        
+       
+    }
+
+    .video{
+        width : 50%;
+        height: 500px;
+        background-color: #964862;
+    }
+
+</style>
+<body margin="0">
+    <nav class = "upperbox">
+            <img class = "mainlogo" src = "IMG\gls_logo_main.png"> 
+ 
+        
+        <ul class = "upper_list">
+            <li><a href=""> about </a></li>
+            <li><a href=""> contact </a></li>
+        </ul>
+        
+    </nav>
+    
+    <div class="contents">
+        contents
+    </div>
+    <hr>
+
+    <div class ="category">
+        <div class ="magazine">
+            magazine
+            <img class ="img_mag" src="IMG/Group 3.png">
+        </div>
+
+        <div class = "video">
+            video
+
+        </div>
+
+    </div>
+
+</body>
+</html>
