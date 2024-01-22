@@ -6,7 +6,7 @@
     <title>MAIN</title>
 </head>
 <style>
-    .body,.html{
+    html,body {
         margin: 0px;
         padding: 0px;
         background-color: #FDFCFC ;
@@ -18,8 +18,6 @@
     .upperbox{
         width : 100%;
         height: 295px;
-        border : 1px solid black;
-        border-radius : 5px;
         overflow: hidden;
         display: grid; 
         
@@ -33,6 +31,7 @@
     }
 
     .upper_list{
+        margin:0;
         text-decoration: none;
         list-style: none;
         font-size: 32px;
@@ -50,35 +49,40 @@
         font-size: 35px;
         text-align: center;
     }
-
+    .text{
+        z-index: 1;
+        position: absolute;
+        
+    }
 
     .category{
         display: flex;
         position: relative;
         overflow: hidden;
+        height: 100%;
+        
+
     }
 
     .magazine{
         width : 50%;
-        height: 500px;
         background-color: #C8D9F8;
+        display: flex;
 
-        
     } 
     .img_mag{
         display: none;
         
     }
     .magazine:hover .img_mag {
-        width: 100%;
+        max-width: 1200px;
         display: block;
-        
-       
+
     }
 
     .video{
         width : 50%;
-        height: 500px;
+        height: 100%;
         background-color: #964862;
     }
 
@@ -94,6 +98,7 @@
         </ul>
         
     </nav>
+    <hr>
     
     <div class="contents">
         contents
@@ -101,12 +106,12 @@
     <hr>
 
     <div class ="category">
-        <div class ="magazine">
-            magazine
+        <div class ="magazine" >
+            <span class ="text" > magazine </span>
             <img class ="img_mag" src="IMG/Group 3.png">
         </div>
 
-        <div class = "video">
+        <div class = "video" onclick="location.href='video.html';">
             video
 
         </div>
