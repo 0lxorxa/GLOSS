@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine 수직스크롤</title>
+</head>
+
+<style>
+    @font-face{
+    src: url("Horagen.otf");
+    font-family: "Horagen";
+}
+
+    html,body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #FDFCFC ;
+        height: 100%;
+        overflow: hidden;
+        display:inline;
+        font-family: "Horagen"
+    }
+    nav{
+        border-bottom: 1px solid #000;
+        width: 100%;
+        font-size: 35px;
+        margin-top: 32px;
+        padding-left: 32px;
+        padding-bottom: 21px;
+        color: black;
+
+    }
+    .middlebox{
+        height: 120px;
+    }
+    .container {
+        display: flex;
+        vertical-align: bottom;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+    }
+    .yr2023, .yr2022, .yr2021{
+        
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        width: 720px;	flex-basis: 50%;
+	    flex-shrink: 0;
+        white-space:nowrap
+    }
+    .number{
+        text-align: center;
+        height: 35px;
+        width: 100%;
+        border-bottom: 1px solid black;
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    .cover1, .cover2{
+        display: inline-block;
+        text-align: center;
+        border-left: 1px solid gray;
+        width: 50%;
+        white-space:nowrap
+    }
+    .vol{
+        margin: 10px 0px 0px 0px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+</style>
+<body margin="0">
+
+    <nav>
+        magazines
+        <a href="index.html"> <img src ="IMG/gls_logo_sub.png" style="float:right;  margin-right:50px; margin-top: -10px;" height="60px"> </a>
+    </nav>
+
+    <div class="middlebox" >
+    </div>
+
+    <section class="container"> 
+        <div class ="yr2023">
+            <div class = "number">
+                2023
+            </div>
+            <div class = "cover2">
+                <p class="vol"> Volume 6 </p>
+                <hr>
+                <br>
+                <a href=""><img src ="IMG/2023-2M.png" height="400px"></a>
+            </div><div class = "cover1">
+                <p class="vol"> Volume 5 </p>
+                <hr>
+                <br>
+                <a href=""><img src ="IMG/2023-1M.png" height="400px"></a>
+            </div>
+        </div>
+
+        <div class ="yr2022">
+            <div class = "number">
+                2022
+            </div>
+            <div class = "cover2">
+                <p class="vol"> Volume 4 </p>
+                <hr>
+                <br>
+                <a href=""><img src ="IMG/2022-2M.png" height="400px"></a>
+            </div><div class = "cover1">
+                <p class="vol"> Volume 3 </p>
+                <hr>
+                <br>
+                <a href=""><img src ="IMG/2022-1M.png" height="400px"></a>
+            </div>
+        </div>
+
+        <div class ="yr2021">
+            <div class = "number">
+                2021
+            </div>
+            <div class = "cover1">
+
+            </div>
+            <div class = "cover2">
+
+            </div>
+        </div>
+
+    </section>
+</body>

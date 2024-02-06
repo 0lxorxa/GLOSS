@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine 수직스크롤</title>
+</head>
+
+<style>
+    html,body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #FDFCFC ;
+        height: 100%;
+        overflow-y: hidden;
+        display:inline
+    }
+
+    .upperbox {
+        height: 107px;
+    }
+    .middlebox{
+        height: 186px;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: no-wrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 100%;
+    }
+    
+    .yr2023, .yr2022, .yr2021{
+        width: 1000px;
+        border: 1px solid black;
+    }
+    
+
+</style>
+<body margin="0">
+
+    <nav class = "upperbox">
+    </nav>
+    <hr>
+
+    <div class="middlebox" >
+    </div>
+
+    <div class="container"> 
+        <div class ="yr2023">
+            <div class = "number">
+                2023
+            </div>
+            <div class = "cover1">
+                cover-1
+            </div>
+            <div class = "cover2">
+                cover-2
+            </div>
+        </div>
+
+        <div class ="yr2022">
+            <div class = "number">
+                2022
+            </div>
+            <div class = "cover1">
+
+            </div>
+            <div class = "cover2">
+
+            </div>
+        </div>
+
+        <div class ="yr2021">
+            <div class = "number">
+                2021
+            </div>
+            <div class = "cover1">
+
+            </div>
+            <div class = "cover2">
+
+            </div>
+        </div>
+
+</body>
